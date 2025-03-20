@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qpp#p3eyndv5x9)h&giuk=91c4gzd7rr71sfie!l@oe^tz!)f)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'sms.com', 'med-production-d19d.up.railway.app']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'sms.com', 'verrgroup.up.railway.app']
 
 
 
@@ -139,6 +139,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['https://med-production-d19d.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://verrgroup.up.railway.app']
 CSRF_COOKIE_SECURE = True
 SESSION_COOKIE_SECURE = True
