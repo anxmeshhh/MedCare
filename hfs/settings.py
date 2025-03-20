@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-qpp#p3eyndv5x9)h&giuk=91c4gzd7rr71sfie!l@oe^tz!)f)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['med-production-d19d.up.railway.app']
+
 
 
 # Application definition
