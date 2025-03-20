@@ -81,10 +81,10 @@ pymysql.install_as_MySQLdb()
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'hospital_db',           # Your database name
+        'NAME': 'railway',           # Your database name
         'USER': 'root',                 # MySQL username
-        'PASSWORD': 'theanimesh2005',    # MySQL password
-        'HOST': 'localhost',            # Use '127.0.0.1' if localhost doesn't work
+        'PASSWORD': 'FVmxAfEiXKongXjKDVQSVlQmcHdmqvDn',    # MySQL password
+        'HOST': 'mysql.railway.internal',            # Use '127.0.0.1' if localhost doesn't work
         'PORT': '3306',                 # MySQL default port
     }
 }
