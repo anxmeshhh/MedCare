@@ -15,7 +15,7 @@ def login_view(request):
                 passwd="FVmxAfEiXKongXjKDVQSVlQmcHdmqvDn",   # MySQL password
                 db="railway",
                 port=57741  
-                          # Database name
+                         
             )
             cursor = db.cursor()
 
