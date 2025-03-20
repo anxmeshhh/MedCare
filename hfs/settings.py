@@ -75,8 +75,6 @@ WSGI_APPLICATION = 'hfs.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-import pymysql
-pymysql.install_as_MySQLdb()
 
 
 DATABASES = {
@@ -126,6 +124,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    BASE_DIR / 'users' / 'static',  # Correct path for static files
+]
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # Directory where static files will be collected
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
