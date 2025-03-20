@@ -77,16 +77,15 @@ WSGI_APPLICATION = 'hfs.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+import dj_database_url
+import os
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'railway',           # Your database name
-        'USER': 'root',                 # MySQL username
-        'PASSWORD': 'FVmxAfEiXKongXjKDVQSVlQmcHdmqvDn',    # MySQL password
-        'HOST': 'shinkansen.proxy.rlwy.net',   # ✅ Railway's host
-        'PORT': '57741',                # ✅ Railway's external port
-    }
+    'default': dj_database_url.parse(
+        os.getenv('MYSQL_URL', 'mysql://root:FVmxAfEiXKongXjKDVQSVlQmcHdmqvDn@shinkansen.proxy.rlwy.net:57741/railway')
+    )
 }
+
 
 
 
