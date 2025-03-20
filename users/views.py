@@ -10,10 +10,12 @@ def login_view(request):
         try:
             # ✅ Connect to MySQL directly
             db = MySQLdb.connect(
-                host="localhost",         # MySQL host
+                host="shinkansen.proxy.rlwy.net",         # MySQL host
                 user="root",              # MySQL username
-                passwd="theanimesh2005",   # MySQL password
-                db="hospital_db"          # Database name
+                passwd="FVmxAfEiXKongXjKDVQSVlQmcHdmqvDn",   # MySQL password
+                db="railway",
+                port=57741  
+                          # Database name
             )
             cursor = db.cursor()
 

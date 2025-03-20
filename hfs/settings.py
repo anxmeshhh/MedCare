@@ -77,17 +77,17 @@ WSGI_APPLICATION = 'hfs.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'railway',           # Your database name
         'USER': 'root',                 # MySQL username
         'PASSWORD': 'FVmxAfEiXKongXjKDVQSVlQmcHdmqvDn',    # MySQL password
-        'HOST': 'mysql.railway.internal',            # Use '127.0.0.1' if localhost doesn't work
-        'PORT': '3306',                 # MySQL default port
+        'HOST': 'shinkansen.proxy.rlwy.net',   # ✅ Railway's host
+        'PORT': '57741',                # ✅ Railway's external port
     }
 }
+
 
 
 # Password validation
